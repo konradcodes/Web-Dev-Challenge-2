@@ -386,7 +386,7 @@ template {
   height: 40vh;
   width: 100vw;
   margin: 0;
-  background-image: url("/img/Backgroundimage.png");
+  background-image: url("../img/Backgroundimage.png");
   background-position: center;
   background-size: cover; }
   .header__logo-box {
