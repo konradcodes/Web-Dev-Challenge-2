@@ -31,29 +31,76 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #fff; }
+  color: #fff;
+  animation: fromLeft 2s ease-out; }
+  @media only screen and (min-width: 25em) {
+    .heading__primary {
+      font-size: 1.1rem; } }
+  @media only screen and (min-width: 31.25em) {
+    .heading__primary {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .heading__primary {
+      font-size: 1.4rem; } }
+  @media only screen and (min-width: 50em) {
+    .heading__primary {
+      font-size: 1.7rem; } }
+  @media only screen and (min-width: 68.75em) {
+    .heading__primary {
+      font-size: 1.9rem; } }
 
 .heading__paragraph {
   font-size: 0.9rem;
   font-weight: 300;
-  color: #fff; }
+  color: #fff;
+  animation: fromRight 2s ease-out; }
+  @media only screen and (min-width: 31.25em) {
+    .heading__paragraph {
+      font-size: 1.1rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .heading__paragraph {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 50em) {
+    .heading__paragraph {
+      font-size: 1.4rem; } }
+  @media only screen and (min-width: 68.75em) {
+    .heading__paragraph {
+      font-size: 1.6rem; } }
 
 .heading-tertiary {
   font-size: 0.8rem;
   color: #6d6d6d;
   text-align: center;
   margin-bottom: 1rem; }
+  @media only screen and (min-width: 25em) {
+    .heading-tertiary {
+      font-size: 0.9rem; } }
+  @media only screen and (min-width: 31.25em) {
+    .heading-tertiary {
+      font-size: 1.1rem; } }
 
 .heading-about {
   font-size: 1.2rem;
   color: #575757;
   font-weight: bold;
   text-transform: uppercase; }
+  @media only screen and (min-width: 43.75em) {
+    .heading-about {
+      font-size: 1.4rem; } }
+  @media only screen and (min-width: 75em) {
+    .heading-about {
+      font-size: 1.5rem; } }
 
 .items__paragraph {
   font-size: 0.9rem;
   color: #6d6d6d;
   font-weight: 400; }
+  @media only screen and (min-width: 43.75em) {
+    .items__paragraph {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 75em) {
+    .items__paragraph {
+      font-size: 1.1rem; } }
 
 .items__box {
   text-align: center; }
@@ -63,6 +110,15 @@ body {
   font-size: 1.1rem;
   color: #5a5a5a;
   font-weight: 400; }
+  @media only screen and (min-width: 31.25em) {
+    .heading-slider {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 43.75em) {
+    .heading-slider {
+      font-size: 1.3rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .heading-slider {
+      font-size: 1.4rem; } }
   .heading-slider span {
     color: #4b4b4b;
     font-weight: bolder;
@@ -72,15 +128,31 @@ body {
   font-size: 1rem;
   color: #5a5a5a;
   font-weight: 300; }
+  @media only screen and (min-width: 31.25em) {
+    .slider__paragraph {
+      font-size: 1.1rem;
+      text-align: center; } }
 
 .slider__client-name {
   color: #4b4b4b;
   font-weight: 600;
   font-size: 0.9rem; }
+  @media only screen and (min-width: 31.25em) {
+    .slider__client-name {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .slider__client-name {
+      font-size: 1.1rem; } }
 
 .slider__client-surname {
   font-size: 0.8rem;
   color: #6d6d6d; }
+  @media only screen and (min-width: 31.25em) {
+    .slider__client-surname {
+      font-size: 0.9rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .slider__client-surname {
+      font-size: 1rem; } }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -381,6 +453,30 @@ template {
 [hidden] {
   display: none; }
 
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fromTop {
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 .header {
   position: relative;
   height: 40vh;
@@ -389,12 +485,39 @@ template {
   background-image: url("../img/Backgroundimage.png");
   background-position: center;
   background-size: cover; }
+  @media only screen and (min-width: 75em) {
+    .header {
+      height: 50vh; } }
   .header__logo-box {
     position: absolute;
     top: 1rem;
     left: 1rem; }
+    @media only screen and (min-width: 31.25em) {
+      .header__logo-box {
+        top: 1.2rem; } }
+    @media only screen and (min-width: 37.5em) {
+      .header__logo-box {
+        top: 1.3rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .header__logo-box {
+        left: 2rem; } }
   .header__logo {
     height: 0.6rem; }
+    @media only screen and (min-width: 25em) {
+      .header__logo {
+        height: 0.7rem; } }
+    @media only screen and (min-width: 31.25em) {
+      .header__logo {
+        height: 0.9rem; } }
+    @media only screen and (min-width: 50em) {
+      .header__logo {
+        height: 1.1rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .header__logo {
+        height: 1.2rem; } }
+    @media only screen and (min-width: 68.75em) {
+      .header__logo {
+        height: 1.3rem; } }
   .header__text-box {
     position: absolute;
     width: 70%;
@@ -407,6 +530,9 @@ template {
     border-width: 0 0 1px;
     border-image: linear-gradient(90deg, rgba(255, 255, 255, 0), white 50%, rgba(255, 255, 255, 0) 100%) 0 0 100%;
     border-style: solid; }
+    @media only screen and (min-width: 31.25em) {
+      .header__line {
+        top: 4rem; } }
   .header__navbar {
     text-decoration: none;
     position: absolute;
@@ -415,7 +541,8 @@ template {
     background-color: transparent;
     overflow: hidden;
     text-align: center;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    animation: fromTop 1.7s ease-in-out; }
     .header__navbar ul {
       list-style-type: none;
       display: flex;
@@ -426,10 +553,37 @@ template {
       font-size: 0.7rem;
       margin: 0.3rem;
       font-weight: 400; }
+      @media only screen and (min-width: 25em) {
+        .header__navbar li {
+          font-size: 0.7rem; } }
+      @media only screen and (min-width: 31.25em) {
+        .header__navbar li {
+          font-size: 1rem; } }
+      @media only screen and (min-width: 50em) {
+        .header__navbar li {
+          font-size: 1.2rem; } }
+      @media only screen and (min-width: 56.25em) {
+        .header__navbar li {
+          font-size: 1.3rem; } }
+      @media only screen and (min-width: 68.75em) {
+        .header__navbar li {
+          font-size: 1.4rem; } }
     .header__navbar a {
       text-decoration: none;
       color: #fff;
       transition: all 0.3s; }
+      @media only screen and (min-width: 25em) {
+        .header__navbar a {
+          margin: 0 0.2rem; } }
+      @media only screen and (min-width: 43.75em) {
+        .header__navbar a {
+          margin: 0 0.5rem; } }
+      @media only screen and (min-width: 56.25em) {
+        .header__navbar a {
+          margin: 0 0.6rem; } }
+      @media only screen and (min-width: 68.75em) {
+        .header__navbar a {
+          margin: 0 0.7rem; } }
       .header__navbar a:hover {
         background-image: linear-gradient(to right, #fad961, #f76b1c);
         -webkit-background-clip: text;
@@ -453,6 +607,14 @@ template {
   align-items: center;
   padding: 2rem 4rem;
   width: 100%; }
+  @media only screen and (min-width: 50em) {
+    .aside {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline; } }
+  @media only screen and (min-width: 50em) {
+    .aside br {
+      content: ""; } }
 
 .items {
   display: flex;
@@ -461,12 +623,27 @@ template {
   align-items: center;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
+  @media only screen and (min-width: 43.75em) {
+    .items {
+      flex-direction: row; } }
+  @media only screen and (min-width: 68.75em) {
+    .items {
+      margin: 3rem 2rem; } }
   .items__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem; }
+    @media only screen and (min-width: 31.25em) {
+      .items__box {
+        padding: 1.5rem 4rem; } }
+    @media only screen and (min-width: 37.5em) {
+      .items__box {
+        padding: 1.5rem 6rem; } }
+    @media only screen and (min-width: 43.75em) {
+      .items__box {
+        padding: 1.5rem 2rem; } }
   .items__heading-container {
     display: flex;
     justify-content: center;
@@ -481,18 +658,37 @@ template {
   border-radius: 15px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
   margin: 2rem 2.5rem; }
+  @media only screen and (min-width: 43.75em) {
+    .slider {
+      margin: 2rem 7rem; } }
+  @media only screen and (min-width: 50em) {
+    .slider {
+      margin: 2rem 10rem; } }
+  @media only screen and (min-width: 68.75em) {
+    .slider {
+      margin: 2rem 14rem; } }
+  @media only screen and (min-width: 75em) {
+    .slider {
+      margin: 2rem 20rem; } }
   .slider__testimonial {
     margin: 1rem 0; }
+    @media only screen and (min-width: 31.25em) {
+      .slider__testimonial {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; } }
   .slider__icon {
     height: 1.5rem;
     margin-right: 1rem; }
   .slider__paragraph {
-    font-size: 1rem;
     margin-bottom: 1rem; }
   .slider__client {
     display: flex;
     justify-content: flex-start;
     align-items: center; }
+    @media only screen and (min-width: 43.75em) {
+      .slider__client {
+        justify-content: center; } }
   .slider__image {
     border-radius: 50%;
     height: 2.5rem;
@@ -543,6 +739,16 @@ template {
   border-style: none;
   box-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
   transition: all 0.3s; }
+  @media only screen and (min-width: 25em) {
+    .btn,
+    .btn:link {
+      font-size: 0.9rem;
+      padding: 0.6rem 0.9rem; } }
+  @media only screen and (min-width: 50em) {
+    .btn,
+    .btn:link {
+      font-size: 1.1rem;
+      padding: 0.7rem 1rem; } }
   .btn:hover,
   .btn:link:hover {
     transform: translateY(-0.3rem);
